@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A14">
+
+    <!-- ── Sol şerit ── -->
+    <View
+        android:id="@+id/accentBar"
+        android:layout_width="3dp"
+        android:layout_height="0dp"
+        android:background="#3B5BFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- ── Başlık Bloğu ── -->
+    <LinearLayout
+        android:id="@+id/headerBlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@id/accentBar"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ExeLite"
+            android:textColor="#EEEEFF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.08" />
+
+        <TextView
+            android:id="@+id/textViewSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Windows App Launcher"
+            android:textColor="#44557A"
+            android:textSize="11sp"
+            android:letterSpacing="0.12" />
+    </LinearLayout>
+
+    <!-- ── Ayırıcı çizgi ── -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#1A2040"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/accentBar"
+        app:layout_constraintTop_toBottomOf="@id/headerBlock" />
+
+    <!-- ═══════════════════════════════════════════════
+         KART 1 — SETUP EXE (Sol)
+    ═══════════════════════════════════════════════ -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardSetup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        app:cardBackgroundColor="#10142A"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cardGame"
+        app:layout_constraintStart_toEndOf="@id/accentBar"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintWidth_percent="0.45">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:gravity="center_vertical">
+
+            <!-- Adım etiketi -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STEP 1 — INSTALL"
+                android:textColor="#3B5BFF"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.15"
+                android:layout_marginBottom="6dp" />
+
+            <!-- Başlık -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Setup / Installer"
+                android:textColor="#C8CCFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select the Windows installer (.exe)"
+                android:textColor="#33446A"
+                android:textSize="11sp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Seçili yol -->
+            <TextView
+                android:id="@+id/textViewSetupPath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No file selected"
+                android:textColor="#2A3558"
+                android:textSize="12sp"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                android:background="#0D1020"
+                android:padding="8dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Butonlar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonSelectSetup"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Browse"
+                    android:textSize="13sp"
+                    android:textColor="#FFFFFF"
+                    app:backgroundTint="#1E2E7A"
+                    app:cornerRadius="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonClearSetup"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:text="X"
+                    android:textSize="13sp"
+                    android:textColor="#FF4466"
+                    android:visibility="gone"
+                    app:backgroundTint="#200A10"
+                    app:cornerRadius="8dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- ═══════════════════════════════════════════════
+         KART 2 — GAME EXE (Sağ)
+    ═══════════════════════════════════════════════ -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardGame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="12dp"
+        app:cardBackgroundColor="#0E1A10"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cardSetup"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintWidth_percent="0.45">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:gravity="center_vertical">
+
+            <!-- Adım etiketi -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STEP 2 — LAUNCH"
+                android:textColor="#22AA55"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.15"
+                android:layout_marginBottom="6dp" />
+
+            <!-- Başlık -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Game Executable"
+                android:textColor="#C8FFDA"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select the installed game .exe"
+                android:textColor="#1A3325"
+                android:textSize="11sp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Seçili yol -->
+            <TextView
+                android:id="@+id/textViewExePath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Run setup first"
+                android:textColor="#1A2A20"
+                android:textSize="12sp"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                android:background="#080F0A"
+                android:padding="8dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Butonlar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonSelectExe"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Browse"
+                    android:textSize="13sp"
+                    android:textColor="#88BBAA"
+                    android:enabled="false"
+                    android:alpha="0.4"
+                    app:backgroundTint="#0D1F14"
+                    app:cornerRadius="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonClearExe"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:text="X"
+                    android:textSize="13sp"
+                    android:textColor="#FF4466"
+                    android:visibility="gone"
+                    app:backgroundTint="#200A10"
+                    app:cornerRadius="8dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- ═══════════════════════════════════════════════
+         LAUNCH BUTTON (Sağ Üst)
+    ═══════════════════════════════════════════════ -->
+    <TextView
+        android:id="@+id/tvProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#3B5BFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonLaunch"
+        app:layout_constraintTop_toTopOf="@+id/buttonLaunch"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonLaunch" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonLaunch"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:text="RUN SETUP"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:enabled="false"
+        android:alpha="0.4"
+        app:backgroundTint="#3B5BFF"
+        app:cornerRadius="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

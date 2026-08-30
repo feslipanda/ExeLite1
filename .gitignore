@@ -1,0 +1,7 @@
+.gradle/
+build/
+app/build/
+*.zip
+*.tar
+*.tar.gz
+*.apk

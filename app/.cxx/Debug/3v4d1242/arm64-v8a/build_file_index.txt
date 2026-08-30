@@ -1,0 +1,2 @@
+C:\deneme\deneme1\ExeLite\app\src\main\cpp\CMakeLists.txt
+C:\deneme\deneme1\ExeLite\app\src\main\cpp\winlator\CMakeLists.txt

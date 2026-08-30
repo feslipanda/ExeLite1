@@ -1,0 +1,120 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				},
+				{
+					"build" : "winlator",
+					"jsonFile" : "directory-winlator-Debug-352799d389e1806712c3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "winlator",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "exelite_engine",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Winlator",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "exelite_engine::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-exelite_engine-Debug-089c72cd714177308807.json",
+					"name" : "exelite_engine",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "faketmp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-faketmp-Debug-c1b11604899c2b497bfd.json",
+					"name" : "faketmp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wineserver_wrapper::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wineserver_wrapper-Debug-0c5c9e25a89c8d0ba182.json",
+					"name" : "wineserver_wrapper",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "winlator::@24ed85a0dee10927067c",
+					"jsonFile" : "target-winlator-Debug-04b93276baa2e27838c8.json",
+					"name" : "winlator",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/deneme/deneme1/ExeLite/app/.cxx/Debug/3v4d1242/arm64-v8a",
+		"source" : "C:/deneme/deneme1/ExeLite/app/src/main/cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

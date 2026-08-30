@@ -1,0 +1,9 @@
+﻿adb.exe : WARNING: -t 0 invalid, setting to 1
+At line:1 char:218
++ ... d. Now tail live for 30s..."; & $adbPath logcat -t 0 *:V 2>&1 | Selec ...
++                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (WARNING: -t 0 invalid, setting to 1:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+--------- beginning of main
+08-27 18:58:09.994 26973 26973 I adbd    : adbd service requested 'shell,v2:export ANDROID_LOG_TAGS=''; exec logcat '-t' '0' '*:V''

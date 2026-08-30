@@ -1,0 +1,62 @@
+{
+  "buildFiles": [
+    "C:\\deneme\\deneme1\\ExeLite\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "C:\\deneme\\deneme1\\ExeLite\\app\\src\\main\\cpp\\winlator\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\kerim\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "C:\\deneme\\deneme1\\ExeLite\\app\\.cxx\\Debug\\3v4d1242\\arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\kerim\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "C:\\deneme\\deneme1\\ExeLite\\app\\.cxx\\Debug\\3v4d1242\\arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "exelite_engine::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "exelite_engine",
+      "output": "C:\\deneme\\deneme1\\ExeLite\\app\\build\\intermediates\\cxx\\Debug\\3v4d1242\\obj\\arm64-v8a\\libexelite_engine.so",
+      "runtimeFiles": []
+    },
+    "faketmp::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "faketmp",
+      "output": "C:\\deneme\\deneme1\\ExeLite\\app\\build\\intermediates\\cxx\\Debug\\3v4d1242\\obj\\arm64-v8a\\libfaketmp.so",
+      "runtimeFiles": []
+    },
+    "wineserver_wrapper::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "wineserver_wrapper",
+      "output": "C:\\deneme\\deneme1\\ExeLite\\app\\build\\intermediates\\cxx\\Debug\\3v4d1242\\obj\\arm64-v8a\\libwineserver_wrapper.so",
+      "runtimeFiles": []
+    },
+    "winlator::@24ed85a0dee10927067c": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "winlator",
+      "output": "C:\\deneme\\deneme1\\ExeLite\\app\\build\\intermediates\\cxx\\Debug\\3v4d1242\\obj\\arm64-v8a\\libwinlator.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "C:\\Users\\kerim\\AppData\\Local\\Android\\Sdk\\ndk\\26.1.10909125\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "C:\\Users\\kerim\\AppData\\Local\\Android\\Sdk\\ndk\\26.1.10909125\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}
